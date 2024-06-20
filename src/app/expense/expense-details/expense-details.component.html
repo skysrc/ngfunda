@@ -1,0 +1,25 @@
+<div class="container">
+    <img [src]="expense?.imageUrl" [alt]="expense?.name" class="event-image">
+  
+    <div class="row">
+      <div class="col-md-11">
+        <h2>{{expense?.name}} </h2>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div><strong>Date:</strong> {{expense?.date}}</div>
+        <div><strong>Time:</strong> {{expense?.time}}</div>
+        <div><strong>Price:</strong> ${{expense?.price}}</div>
+      </div>
+      <div class="col-md-6">
+        <address>
+          <strong>Address:</strong><br />
+          {{expense?.location?.address}}<br />
+          {{expense?.location?.city}}, {{expense?.location?.country}}
+        </address>
+      </div>
+    </div>
+  </div>
+  
