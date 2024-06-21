@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'expense';
+  expense = {
+    name: "Bread",
+    category: "groceries",
+    price: "123.55"
+  };
 }
