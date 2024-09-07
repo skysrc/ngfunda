@@ -6,7 +6,6 @@ import { Component, EventEmitter, input, Input, Output, output } from "@angular/
     <div class="well hoverwell thumbnail">
         <h2>{{expense.name}}</h2>
         <div> Date : {{expense.date}} </div>
-        <button class="btn btn-primary" (click)="handleClickMe()">Click Me !</button>
     </div>
     
     `
@@ -14,9 +13,4 @@ import { Component, EventEmitter, input, Input, Output, output } from "@angular/
 export class ExpenseThumbnailComponent {
     @Input() expense: any
     @Output() eventClick = new EventEmitter()
-
-    handleClickMe() {
-        console.log('clicked');
-        this.eventClick.emit(this.expense.name);
-    }
 }
