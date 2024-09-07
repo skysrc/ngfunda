@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
     <div>
         <h1>Upcoming expense</h1>
         <hr/>
-        <expense-thumbnail [expense]="expense1"></expense-thumbnail>
+        <expense-thumbnail (eventClick)="handleEventClicked($event)" [expense]="expense1"></expense-thumbnail>
     </div>
    `
 })
@@ -18,5 +18,9 @@ export class ExpenseListComponent {
         time: '10:00 am',
         price: 23.33,
         imageUrl: '/assets/images/agnuarlconnect-shield/png'
+    }
+
+    handleEventClicked(data: any) {
+        console.log('Received', data);
     }
 }
