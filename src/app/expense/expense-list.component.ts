@@ -5,10 +5,8 @@ import { Component } from "@angular/core";
     template: `
     <div>
         <h1>Upcoming expense</h1>
-        <h3>{{expense.someProperty}}</h3>
         <hr/>
         <expense-thumbnail #expense [expense]="expense1"></expense-thumbnail>
-        <button class="btn btn-primary" (click)="expense.logFoo()"> Log some foo</button>
     </div>
    `
 })

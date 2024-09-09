@@ -12,10 +12,4 @@ import { Component, EventEmitter, input, Input, Output, output } from "@angular/
 })
 export class ExpenseThumbnailComponent {
     @Input() expense: any
-    someProperty: any = "some value"
-    logFoo() {
-        console.log('foo')
-    }
-
-
 }
