@@ -12,5 +12,10 @@ import { Component, EventEmitter, input, Input, Output, output } from "@angular/
 })
 export class ExpenseThumbnailComponent {
     @Input() expense: any
-    @Output() eventClick = new EventEmitter()
+    someProperty: any = "some value"
+    logFoo() {
+        console.log('foo')
+    }
+
+
 }
