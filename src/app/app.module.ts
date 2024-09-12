@@ -7,12 +7,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ExpenseListComponent } from './expense/expense-list.component';
 import { ExpenseThumbnailComponent } from './expense/expense-thumbnail';
-
+import { NavBarComponent } from './nav/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     ExpenseListComponent,
-    ExpenseThumbnailComponent
+    ExpenseThumbnailComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
